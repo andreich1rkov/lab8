@@ -13,7 +13,7 @@ def Obrabotka_KM_and_Tarifs():
     while True:
         try:
             X = int(input())
-            if X < 0 or float(X).is_integer() == False:
+            if X < 0:
                 raise ValueError
             break
         except ValueError:
@@ -45,4 +45,6 @@ print()
 
 
 # Главные функции (сортировка бомбин для сотрудников)
-
+# MAIN ИДЕЯ: 
+# берем мин. элемент из списка distances и ему в пару даём макс. элемент из Tarifs.
+# Далее убираем эти 2 элемента из списка и повторяем процедуру.
