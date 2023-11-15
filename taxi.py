@@ -159,7 +159,7 @@ N = Obrabotka_N()
 # Ввод км до домов сотрудников
 distances = []
 for i in range(N):
-    print(f"Введите расстояние в километрах для сотрудника {i}: ")
+    print(f"Введите расстояние в километрах для сотрудника {i+1}: ")
     distance = Obrabotka_KM_and_Tarifs()
     distances.append(distance)
 print()
@@ -168,7 +168,7 @@ print()
 # Ввод тарифов для таксистов
 Tarifs = []
 for i in range(N):
-    print(f"Ввердите тариф для таксиста {i}: ")
+    print(f"Ввердите тариф для таксиста {i+1}: ")
     Tarif = Obrabotka_KM_and_Tarifs()
     Tarifs.append(Tarif)
 print()
@@ -186,7 +186,7 @@ while distances != [] and Tarifs != []:
         Tarifs.remove(Price)
         Prices.append([i+1, Price_za_Kms])
 
-print("Список сотрудников: 1-е число - номер сотрудника (начиная с '0'), 2-е число - сумма за такси до его дома:")
+print("Список сотрудников: 1-е число - номер сотрудника (начиная с '1'), 2-е число - сумма за такси до его дома:")
 print(Prices)
 print()
 
