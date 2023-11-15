@@ -184,7 +184,7 @@ while distances != [] and Tarifs != []:
         Price_za_Kms = Km*Price
         distances.remove(Km)
         Tarifs.remove(Price)
-        Prices.append([i, Price_za_Kms])
+        Prices.append([i+1, Price_za_Kms])
 
 print("Список сотрудников: 1-е число - номер сотрудника (начиная с '0'), 2-е число - сумма за такси до его дома:")
 print(Prices)
