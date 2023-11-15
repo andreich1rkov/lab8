@@ -13,7 +13,7 @@ def Obrabotka_KM_and_Tarifs():
     while True:
         try:
             X = int(input())
-            if X < 0:
+            if X < 1:
                 raise ValueError
             break
         except ValueError:
@@ -184,22 +184,27 @@ while distances != [] and Tarifs != []:
         Price_za_Kms = Km*Price
         distances.remove(Km)
         Tarifs.remove(Price)
-        Prices.append([Km, Price_za_Kms])
+        Prices.append([i, Price_za_Kms])
 
+print("Список сотрудников: 1-е число - номер сотрудника (начиная с '0'), 2-е число - сумма за такси до его дома:")
 print(Prices)
-
+print()
 
 # Итоговая сумма
 y = []
 for i in range(N):
     y.append(Prices[i][1])
     i += 1
-print(f"{sum(y)} руб.\n")
 
 
 # Число в текст
+print()
 number = sum(y)
+print(f"Общая минимальная сумма для заказа такси для всех сотрудников: {number} руб.")
 Number_to_Text(number)
+
+
+
 
 
 
