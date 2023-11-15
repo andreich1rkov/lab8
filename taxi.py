@@ -20,146 +20,151 @@ def Obrabotka_KM_and_Tarifs():
             print("Ошибка, введите целое положительное число: ")
     return X
 
+# max число = 100000
 def Number_to_Text(enterNumber):
     if enterNumber <= 0 or enterNumber > 100000:
-        print("Число не входит в диапазон от 1 до 100000!")
+        print("Число не входит в диапазон от 1 до 100000!", end="")
 
     if enterNumber == 100000:
-        print("Сто тысяч ")
+        print("Сто тысяч ", end="")
 
 
     if (enterNumber // 10000) % 10 == 1:
-        print("Десять ")
+        print("Десять ", end="")
     if (enterNumber // 10000) % 10 == 2:
-        print("Двадцать ")
+        print("Двадцать ", end="")
     elif (enterNumber // 10000) % 10 == 3:
-        print("Тридцать ")
+        print("Тридцать ", end="")
     elif (enterNumber // 10000) % 10 == 4:
-        print("Сорок ")
+        print("Сорок ", end="")
     elif (enterNumber // 10000) % 10 == 5:
-        print("Пятьдесят ")
+        print("Пятьдесят ", end="")
     elif (enterNumber // 10000) % 10 == 6:
-        print("Шестьдесят ")
+        print("Шестьдесят ", end="")
     elif (enterNumber // 10000) % 10 == 7:
-        print("Семьдесят ")
+        print("Семьдесят ", end="")
     elif (enterNumber // 10000) % 10 == 8:
-        print("Восемьдесят ")
+        print("Восемьдесят ", end="")
     elif (enterNumber // 10000) % 10 == 9:
-        print("Девяносто ")
+        print("Девяносто ", end="")
 
 
     if (enterNumber // 1000) % 10 == 1:
-        print("Одна тысяча ")
+        print("Одна тысяча ", end="")
     elif (enterNumber // 1000) % 10 == 2:
-        print("Две тысячи ")
+        print("Две тысячи ", end="")
     elif (enterNumber // 1000) % 10 == 3:
-        print("Три тысячи ")
+        print("Три тысячи ", end="")
     elif (enterNumber // 1000) % 10 == 4:
-        print("Четыре тысячи ")
+        print("Четыре тысячи ", end="")
     elif (enterNumber // 1000) % 10 == 5:
-        print("Пять тысяч ")
+        print("Пять тысяч ", end="")
     elif (enterNumber // 1000) % 10 == 6:
-        print("Шесть тысяч ")
+        print("Шесть тысяч ", end="")
     elif (enterNumber // 1000) % 10 == 7:
-        print("Семь тысяч ")
+        print("Семь тысяч ", end="")
     elif (enterNumber // 1000) % 10 == 8:
-        print("Восемь тысяч ")
+        print("Восемь тысяч ", end="")
     elif (enterNumber // 1000) % 10 == 9:
-        print("Девять тысяч ")
+        print("Девять тысяч ", end="")
 
 
     if (enterNumber // 100) % 10 == 1:
-        print("сто ")
+        print("сто ", end="")
     elif (enterNumber // 100) % 10 == 2:
-        print("двести ")
+        print("двести ", end="")
     elif (enterNumber // 100) % 10 == 3:
-        print("триста ")
+        print("триста ", end="")
     elif (enterNumber // 100) % 10 == 4:
-        print("четыреста ")
+        print("четыреста ", end="")
     elif (enterNumber // 100) % 10 == 5:
-        print("пятьсот ")
+        print("пятьсот ", end="")
     elif (enterNumber // 100) % 10 == 6:
-        print("шестьсот ")
+        print("шестьсот ", end="")
     elif (enterNumber // 100) % 10 == 7:
-        print("семьсот ")
+        print("семьсот ", end="")
     elif (enterNumber // 100) % 10 == 8:
-        print("восемьсот ")
+        print("восемьсот ", end="")
     elif (enterNumber // 100) % 10 == 9:
-        print("девятьсот ")
+        print("девятьсот ", end="")
 
 
     if (enterNumber // 10) % 10 == 1:
         if enterNumber % 10 == 0:
-            print("десять рублей")
+            print("десять рублей", end="")
         elif enterNumber % 10 == 1:
-            print("одинадцать рублей")
+            print("одинадцать рублей", end="")
         elif enterNumber % 10 == 2:
-            print("двенадцать рублей")
+            print("двенадцать рублей", end="")
         elif enterNumber % 10 == 3:
-            print("тринадцать рублей")
+            print("тринадцать рублей", end="")
         elif enterNumber % 10 == 4:
-            print("четырнадцать рублей")
+            print("четырнадцать рублей", end="")
         elif enterNumber % 10 == 5:
-            print("пятнадцать рублей")
+            print("пятнадцать рублей", end="")
         elif enterNumber % 10 == 6:
-            print("шестнадцать рублей")
+            print("шестнадцать рублей", end="")
         elif enterNumber % 10 == 7:
-            print("семнадцать рублей")
+            print("семнадцать рублей", end="")
         elif enterNumber % 10 == 8:
-            print("восемнадцать рублей")
+            print("восемнадцать рублей", end="")
         else:
-            print("девятнадцать рублей")
+            print("девятнадцать рублей", end="")
         
 
     if ((enterNumber // 10) % 10 == 2):
-        print("двадцать ")
+        print("двадцать ", end="")
     elif ((enterNumber // 10) % 10 == 3):
-        print("тридцать ")
+        print("тридцать ", end="")
     elif ((enterNumber // 10) % 10 == 4):
-        print("сорок ")
+        print("сорок ", end="")
     elif ((enterNumber // 10) % 10 == 5):
-        print("пятьдесят ")
+        print("пятьдесят ", end="")
     elif ((enterNumber // 10) % 10 == 6):
-        print("шестьдесят ")
+        print("шестьдесят ", end="")
     elif ((enterNumber // 10) % 10 == 7):
-        print("семьдесят ")
+        print("семьдесят ", end="")
     elif ((enterNumber // 10) % 10 == 8):
-        print("восемьдесят ")
+        print("восемьдесят ", end="")
     elif ((enterNumber // 10) % 10 == 9):
-        print("девяносто ")
+        print("девяносто ", end="")
 
 
     if (enterNumber // 10) % 10 != 1:
         if enterNumber % 10 == 0:
-            print("рублей")
+            print("рублей", end="")
         elif enterNumber % 10 == 1:
-            print("один рубль")
+            print("один рубль", end="")
         elif enterNumber % 10 == 2:
-            print("два рубля ")
+            print("два рубля ", end="")
         elif enterNumber % 10 == 3:
-            print("три рубля")
+            print("три рубля", end="")
         elif enterNumber % 10 == 4:
-            print("четыре рубля")
+            print("четыре рубля", end="")
         elif enterNumber % 10 == 5:
-            print("пять рублей")
+            print("пять рублей", end="")
         elif enterNumber % 10 == 6:
-            print("шесть рублей")
+            print("шесть рублей", end="")
         elif enterNumber % 10 == 7:
-            print("семь рублей")
+            print("семь рублей", end="")
         elif enterNumber % 10 == 8:
-            print("восемь рублей")
+            print("восемь рублей", end="")
         else:
-            print("девять рублей")
+            print("девять рублей", end="")
 
 
 # Ввод N
 N = Obrabotka_N()
 
+# Пробел
+print() 
+
+
 
 # Ввод км до домов сотрудников
 distances = []
 for i in range(N):
-    print(f"Введите расстояние в километрах для сотрудника {i+1}: ")
+    print(f"Введите расстояние в километрах для сотрудника {i+1}: ", end=" ")
     distance = Obrabotka_KM_and_Tarifs()
     distances.append(distance)
 print()
@@ -168,7 +173,7 @@ print()
 # Ввод тарифов для таксистов
 Tarifs = []
 for i in range(N):
-    print(f"Ввердите тариф для таксиста {i+1}: ")
+    print(f"Ввердите тариф для таксиста {i+1}: ", end=" ")
     Tarif = Obrabotka_KM_and_Tarifs()
     Tarifs.append(Tarif)
 print()
@@ -177,6 +182,7 @@ print()
 # берем мин. элемент из distances и ему в пару даём макс. элемент из Tarifs.
 # Далее убираем эти 2 элемента из списков и повторяем.
 Prices = []
+FinalList = []
 while distances != [] and Tarifs != []:
     for i in range(N):
         Km = min(distances)
@@ -185,12 +191,18 @@ while distances != [] and Tarifs != []:
         distances.remove(Km)
         Tarifs.remove(Price)
         Prices.append([i+1, Price_za_Kms])
+        FinalList.append([Km, Price])
 
+
+# Список сотрудников с их километрами
 print("Список сотрудников: 1-е число - номер сотрудника (начиная с '1'), 2-е число - сумма за такси до его дома:")
 print(Prices)
 print()
+print("Список км и тарифов: 1-е число - расстояние в километрах, 2-е число - тариф такси, который этому расстоянию соответсвует:")
+print(FinalList)
+print()
 
-# Итоговая сумма
+# Определение итоговой суммы
 y = []
 for i in range(N):
     y.append(Prices[i][1])
@@ -198,10 +210,10 @@ for i in range(N):
 
 
 # Число в текст
-print()
 number = sum(y)
-print(f"Общая минимальная сумма для заказа такси для всех сотрудников: {number} руб.")
+print(f"Общая минимальная сумма для заказа такси для всех сотрудников: {number} руб.", end=" ")
 Number_to_Text(number)
+
 
 
 
